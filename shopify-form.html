@@ -18,8 +18,8 @@
     }
 
     .auburn-form-header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
+        background: linear-gradient(135deg, #fbdcf8 0%, #f8b4ef 100%);
+        color: #333;
         padding: 40px 30px;
         text-align: center;
     }
@@ -33,9 +33,18 @@
 
     .auburn-form-header p {
         font-size: 16px;
-        opacity: 0.95;
-        line-height: 1.5;
-        margin: 0;
+        line-height: 1.6;
+        margin: 0 0 12px 0;
+    }
+
+    .auburn-form-header p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .auburn-form-header .highlight-text {
+        font-weight: 600;
+        margin-top: 16px;
+        font-size: 15px;
     }
 
     .auburn-form-content {
@@ -82,8 +91,8 @@
     .auburn-form-wrapper select:focus,
     .auburn-form-wrapper textarea:focus {
         outline: none;
-        border-color: #667eea;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        border-color: #f8b4ef;
+        box-shadow: 0 0 0 3px rgba(251, 220, 248, 0.3);
     }
 
     .auburn-form-wrapper textarea {
@@ -118,8 +127,8 @@
     }
 
     .auburn-radio-option:hover {
-        border-color: #667eea;
-        background: #f8f9ff;
+        border-color: #f8b4ef;
+        background: #fef5fe;
     }
 
     .auburn-radio-option input[type="radio"] {
@@ -139,8 +148,8 @@
     .auburn-submit-btn {
         width: 100%;
         padding: 16px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
+        background: linear-gradient(135deg, #fbdcf8 0%, #f8b4ef 100%);
+        color: #333;
         border: none;
         border-radius: 8px;
         font-size: 16px;
@@ -152,7 +161,7 @@
 
     .auburn-submit-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        box-shadow: 0 10px 25px rgba(251, 220, 248, 0.5);
     }
 
     .auburn-submit-btn:active {
@@ -212,7 +221,10 @@
     <div class="auburn-form-container">
         <div class="auburn-form-header">
             <h1>Private Permanent Jewelry Event</h1>
-            <p>Auburn Jewelry offers permanent jewelry services for events across NY, NJ, CT, RI, and MA. Please provide your event details below to receive a customized package with sterling silver and gold-filled options.</p>
+            <p>Looking to have Permanent Jewelry at your next big event or intimate ladies night? We are located in NY, NJ, CT, RI, and MA. Our team will arrive approximately 30 minutes before the start time, set up, and be ready to start welding when your guests arrive!</p>
+            <p>Let Auburn Jewelry create an unforgettable experience for your guests. Whether you're throwing a small get together or a large event, Auburn Jewelry can create a tailor made package that suits your needs. Choose from dozens of top quality sterling silver and 14k gold filled chain options, connectors and charms - want something custom created exclusively for your event? We can do that! Our team of welders have hundreds of hours of experience and are excited to be part of your special day!</p>
+            <p>Please fill out this form to inquire about a private permanent jewelry party. We will get back to you within 2 business days. Thank you!</p>
+            <p class="highlight-text">Want a response immediately? Text us to let us know you filled out the form (914) 960-1923</p>
         </div>
 
         <div class="auburn-form-content">
@@ -225,7 +237,7 @@
 
             <form id="auburnEventForm" action="https://api.web3forms.com/submit" method="POST">
                 <!-- Web3Forms Access Key - Replace with your own -->
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="access_key" value="c43ce53f-ee79-4b03-9d28-fe781190ff3e">
                 <input type="hidden" name="subject" value="New Private Jewelry Event Inquiry">
                 <input type="hidden" name="from_name" value="Auburn Jewelry Event Form">
 
